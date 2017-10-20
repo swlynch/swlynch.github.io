@@ -4,13 +4,14 @@ html, body {
 }
 
 body {
-  background: linear-gradient(#ffcccc, #ffe6e6);
+  background: linear-gradient(#ffcccc, #e7e4e4);
   background-size: cover;
   background: -webkit- linear-gradient (#ffb3b3, #ffe6e6);
   background: -o-linear-gradient (#ffb3b3, #ffe6e6);
   background: moz-linear-gradient(#ffb3b3, #ffe6e6);
   font-family: 'Futura';
   font-size: 16px;
+  background-attachment: fixed;
 }
 
 /* Page content */
@@ -83,4 +84,8 @@ a {
 
 .fa-envelope {
     background: #ffffff;
+}
+
+.main-text {
+
 }
