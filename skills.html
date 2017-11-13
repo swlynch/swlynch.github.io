@@ -3,14 +3,63 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="main.css" rel="stylesheet" />
 </head>
 <body>
+  <div id="menu-container">
+    <div id="menu-wrapper">
+       <div id="hamburger-menu"><span></span><span></span><span></span></div>
+       <!-- hamburger-menu -->
+    </div>
+    <!-- menu-wrapper -->
+    <ul class="menu-list accordion">
+       <li id="nav1" class="toggle menu-item"> 
+          <!-- <span class="icon-plus"></span> -->
+          <a class="menu-link" href="index.html">About</a>
+       </li>
+       <li id="nav2" class="toggle accordion-toggle menu-item expandable"> 
+          <span class="icon-plus"></span>
+          <a class="menu-link" href="#">Projects</a>
+       </li>
+       <!-- accordion-toggle -->
+       <ul class="menu-submenu accordion-content">
+          <li>
+            <a class="head" href="https://bitbucket.org/swlynch/national-park-geek-website">Housewives FaceOff</a>
+            <p class="subhead">WebApp that ranks all real housewives using a sorting algorithm </p>
+          </li>
+          <li><a class="head" href="#">It's Gonna Be Alright</a></li>
+          <p class="subhead">Twine-based narrative on a web interface that blends choice and storytelling </p>          
+          <li><a class="head" href="https://bitbucket.org/swlynch/housewives-sorter">National Park Geek</a></li>
+          <p class="subhead">Website that displays National Parks information pulled from a database </p>          
+       </ul>
+      <li id="nav3" class="toggle menu-item"> 
+          <span class="icon-plus"></span>
+          <a class="menu-link" href="skills.html">Skills</a>
+       </li>
+       <li id="nav4" class="toggle menu-item"> 
+        <span class="icon-plus"></span>
+        <a class="menu-link" href="resume.html">Resume</a>
+     </li>
+     <li id="nav5" class="toggle accordion-toggle menu-item expandable"> 
+      <span class="icon-plus"></span>
+      <a class="menu-link" href="#">Contact</a>
+    </li>
+    <ul class="menu-submenu accordion-content">
+        <li><a class="head" href="mailto:stephenwlynch@gmail.com?Subject=Hey%20there!">Email</a></li>
+        <li><a class="head" href="https://github.com/swlynch">GitHub</a></li>
+        <li><a class="head" href="https://bitbucket.org/swlynch">BitBucket</a></li>
+        <li><a class="head" href="https://www.linkedin.com/in/swlynch/">LinkedIn</a></li>        
+      </ul>
+       <!-- menu-submenu accordon-content-->
+  </ul>
+    <!-- menu-list accordion-->
+ </div>
   <div class="container-fluid">
-    <div class="row">
       <div class="col-md-9 col-md-push-1 col-sm-9 col-sm-push-2 main-text">
         <div>
             <h1>Steve Lynch</h1>
@@ -34,23 +83,27 @@
             <p>Logic Pro, Garageband, Maschine, Audacity, Soundcloud, Apple Podcasts</p>
           </div>
         </div>
-        <div class="col-md-1 cold-md-pull-9 col-sm-2 col-sm-pull-9 sidenav">
-          <div style="padding-bottom: 15px">
-            <a href="index.html">About</a><br>
-            <a href="projects.html">Projects</a><br>
-            <a href="skills.html">Skills</a><br>
-            <a href="resume.html">Resume</a><br>
-            <a href="contact.html">Contact</a><br>
-          </div>
-          <div>
-            <a href="https://github.com/swlynch" class="fa fa-github" style="line-height: 15px; margin: 10px; color: #808080"></a><br>
-            <a href="mailto:stephenwlynch@gmail.com?Subject=Hey%there!" class="fa fa-envelope" style="line-height: 15px; margin: 10px; color: #808080;"></a><br>
-            <a href="https://www.linkedin.com/in/swlynch/" class="fa fa-linkedin" style="line-height: 15px; margin: 10px; color: #808080;"></a><br>
+        
+        <div class="container">
+          <div class="col-md-9 col-md-push-1 col-sm-9 col-push-2 main-text">
+            <div class="col-sm-1 col-md-1">
+              <a href="mailto:stephenwlynch@gmail.com?Subject=Hey%20there!" target="_top" class="fa fa-envelope" style="line-height: 15px; margin: 10px; color: #808080;"></a>
+            </div>
+            <div class="col-sm-1 col-md-1">
+              <a href="https://github.com/swlynch" class="fa fa-github" style="line-height: 15px; margin: 10px; color: #808080"></a>
+            </div>
+            <div class="col-sm-1 col-md-1">
+              <a href="https://bitbucket.org/swlynch" class="fa fa-bitbucket" aria-hidden="true" style="line-height: 15px; margin: 10px; color: #808080"></a>
+            </div>
+            <div class=" col-sm-1 col-md-1">
+              <a href="https://www.linkedin.com/in/swlynch/" class="fa fa-linkedin" style="line-height: 15px; margin: 10px; color: #808080;"></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+<script type="text/javascript" src="practicejs.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script type="javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
